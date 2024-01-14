@@ -1,0 +1,54 @@
+POST http://127.0.0.1:3001/db HTTP/1.1
+Content-Type: application/json
+
+{
+    "user":"cede",
+    "pass": "12345"
+
+}
+###
+GET http://localhost:3001/db/
+
+###
+POST http://127.0.0.1:3001/db/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "user":"luis",
+    "pass":"12345"
+}
+
+####
+POST http://127.0.0.1:3001/db HTTP/1.1
+Content-Type: application/json
+
+{
+    "categoria":"nicole"
+
+}
+
+###
+GET http://localhost:3001/db/
+
+###
+GET http://localhost:3001/db/login
+###
+GET http://localhost:3000/db/VOFsMQQnLzgiXrHL
+
+###
+DELETE http://localhost:3000/db/VOFsMQQnLzgiXrHL/ HTTP/1.1
+Content-Type: application/json
+
+###
+DELETE http://localhost:3001/db/reg/all HTTP/1.1
+Content-Type: application/json
+
+###
+PUT http://localhost:3001/db/addBook/OXgjGSST8x2Jq07m
+Content-Type: application/json
+
+{
+    "book":"Maria"
+}
+###
+GET http://localhost:3001/db/book/EOmHFUjvQSDXUsFg
