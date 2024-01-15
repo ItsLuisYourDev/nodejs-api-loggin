@@ -50,7 +50,6 @@ metodosBd.addBooks = (req, res) => {
                 res.json({ success: false, accion: "existe" });
                 console.log("el libro existe")
             }
-
         }
     });
 }
@@ -109,11 +108,9 @@ metodosBd.insert = (req, res) => {
                         res.json(user);
                     }
                 });
-
             }
         }
     });
-
 }
 
 //!borrar datos
@@ -156,7 +153,6 @@ metodosBd.update = (req, res) => {
                     res.json({ message: `Usuario actualizado: ${numReplaced} registros modificados` });
                 }
             });
-
         }
     });
 }
